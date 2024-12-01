@@ -31,13 +31,22 @@ button {
     font-weight: 600;
     height: 50px;
     border: none;
-    transition: all 500ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    box-shadow: 5px 8px 5px black;
+    
 }
 
 button:hover {
-    scale: 1.05;
-    cursor: pointer
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: transform 300ms ease-in-out
 }
+
+button:active {
+    transform: scale(1.12);
+    transition: transform 50ms ease-in-out
+}
+
 
 .pass-wraper {
     display: flex;
